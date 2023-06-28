@@ -1,11 +1,8 @@
 
-var link = document.getElementById("myLink");
-var overlay = document.getElementById("overlay");
-var popup = document.getElementById("myPopup");
+
 var checkbox = document.getElementById("rulesCheckbox");
 var continueButton = document.getElementById("continueButton");
 
-var cancelButton = document.getElementById("cancelButton");
 var eventPopupLink = document.getElementById("eventPopupLink");
 var popupOverlay = document.querySelector(".pop_over");
 var popupContent = document.querySelector(".pop_cont");
@@ -27,18 +24,6 @@ addEventListener("scroll", function (e){
 });
 
 
-cancelButton.addEventListener("click", function (e) {
-  // e.preventDefault();
-  console.log('done');
-  overlay.style.display = "none";
-  popup.style.display = "none";
-});
-
-link.addEventListener("click", function (e) {
-  e.preventDefault();
-  overlay.style.display = "block";
-  popup.style.display = "block";
-});
 
 
 

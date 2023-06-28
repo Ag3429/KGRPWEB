@@ -157,8 +157,8 @@
         <h3>Kerala Gamers RolePlay</h3>
         <p>
           One of the best samp server which we kgrp team are promising you to
-          give a better roleplay experience for both mobile and pc players.One of
-          the main feature of our server is our 24/7 admin support which you
+          give a better roleplay experience for both mobile and pc players.One
+          of the main feature of our server is our 24/7 admin support which you
           report any bug oru frp our admin will replay as soon as they see it.
           We are also try to provide fivem feature for mobile samp players
         </p>
@@ -206,9 +206,25 @@
     </div>
     <!-- Project -->
 
-    
     <script src="main.js"></script>
+    <script>
+      var cancelButton = document.getElementById("cancelButton");
+      var link = document.getElementById("myLink");
+      var overlay = document.getElementById("overlay");
+      var popup = document.getElementById("myPopup");
+      cancelButton.addEventListener("click", function (e) {
+        // e.preventDefault();
+        console.log("done");
+        overlay.style.display = "none";
+        popup.style.display = "none";
+      });
 
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        overlay.style.display = "block";
+        popup.style.display = "block";
+      });
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -221,7 +237,6 @@
         }, 10000); // 30 seconds (30000 milliseconds)
       }
     </script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
