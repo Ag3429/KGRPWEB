@@ -8,16 +8,20 @@ var cancelButton = document.querySelector(".popup-cancel");
 var continueButton = document.querySelector(".popup-continue");
 
 var header = document.getElementById("header1");
-var nav = document.getElementsByTagName("nav")
+var nav = document.getElementById("nav1")
 
 addEventListener("scroll", function (e){
+
   var scrollx =window.scrollY;
+  console.log(scrollx);
   if(scrollx >= 500)
   {
     header.classList.add("onscroll");
+    nav.classList.add("onscroll");
   }
   else{
     header.classList.remove("onscroll");
+    nav.classList.remove("onscroll");
   }
 });
 

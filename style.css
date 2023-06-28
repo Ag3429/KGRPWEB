@@ -9,6 +9,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  
 }
 
 :root {
@@ -35,6 +36,7 @@ nav {
   background: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: space-around;
+  /* overflow: hidden; */
   align-items: center;
 }
 
@@ -547,7 +549,7 @@ footer span{
   }
   
   nav {
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     position: fixed;
     justify-content: space-between;
     left: 0;
