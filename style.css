@@ -414,6 +414,7 @@ span {
 }
 
 .popup-buttons button {
+  z-index: 70;
   cursor: pointer;
   padding: 5px 10px;
   margin-left: 5px;
