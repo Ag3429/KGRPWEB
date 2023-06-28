@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="app.js"></script>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>KGRP</title>
+
+    <!-- HTML -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="header1">
+      <nav>
+        <div class="logo">
+          <label> <span>K</span>GRP </label>
+        </div>
+        <div>
+          <input type="checkbox" id="check" />
+          <label class="checkbtn" for="check"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Our-team">Our Team</a></li>
+            <li>
+              <a
+                href="https://discord.com/channels/971697340450754590/1072153104000229396"
+                >Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <! ---- home section ellam evide anne-->
+    <section class="home hidden" id="home" bac>
+      <div class="home-content" data-aos="fade-right">
+        <h1>KERALA GAMERZ <span class="main-head"> ROLEPLAY</span></h1>
+
+        <div class="text-animate" data-aos="fade-right">
+          <h2>
+            WE ARE INTRODUCING
+            <span class="write" id="write"></span>
+          </h2>
+        </div>
+        <p>
+          KGRP IS ONE OF THE BEST AND UPDATED SAMP SERVER THE SERVER WITH CUSTOM
+          MAPPINGS AND FIVEM FEATURES WITH 24/7 ADMIN SUPPORT KGRP WILL GIVE YOU
+          THE BEST ROLEPLAY EXPERIENCE
+        </p>
+        <div class="btn-box" data-aos="fade-right">
+          <a href="" class="btn" id="myLink">BE WHITELISTED</a>
+          <a
+            href="samp://kgrp.ddns.net:7796"
+            class="btn"
+            id="connect-id"
+            onclick="event.preventDefault(); setDelayedAlert()"
+            >CONNECT</a
+          >
+        </div>
+
+        <div class="online">
+          <h1 id="online-text">Playing 0/1000</h1>
+        </div>
+
+        <div class="home-sci" data-aos="fade-right">
+          <a href="https://discord.gg/J8g5xMdvdA"
+            ><i class="bx bxl-discord"></i
+          ></a>
+          <a
+            href="https://instagram.com/kerala_gamerz_roleplay?igshid=ZDdkNTZiNTM="
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/@kgrpofficial"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="popup" id="myPopup">
+          <div class="popup-content">
+            <p>
+              GENERAL RP RULES <br /><br />
+
+              * VDM [ KILLING A PLAYER WITH VEHICLE ]<br />
+
+              * RDM [ KILLING A PLAYER FOR NO REASON ]<br />
+
+              * META [ PLAYING RP USING OOC INFORMATION ]<br />
+
+              * POWER GAMING [ ABUSING POWER ]<br />
+
+              * FEAR RP [ SHOW FEAR WHEN SOMEONE POINTS A GUN ON YOU]<br />
+
+              * COMBACT LOGGING [ QUITTING DURING AN ON GOING SITUATION ]<br />
+              <iframe
+                width="270"
+                height="200"
+                src="https://www.youtube.com/embed/XhVYG3zFMuw"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </div>
+          <div class="popup-buttons">
+            <label for="rulesCheckbox">
+              <input type="checkbox" id="rulesCheckbox" /> I have read all the
+              rules or watched video
+            </label>
+            <div>
+              <button id="cancelButton">Cancel</button>
+              <button id="continueButton" disabled>Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about hidden" id="about">
+      <h2 class="heading" data-aos="fade-right">About<span> Us</span></h2>
+      <div class="about-img" data-aos="fade-right">
+        <img src="/img/about.jpg" />
+        <span class="cricle-spin"> </span>
+      </div>
+      <div class="about-conetent" data-aos="fade-right">
+        <h3>Kerala Gamers RolePlay</h3>
+        <p>
+          One of the best samp server which we kgrp team are promising you to
+          give a better roleplay experience for both mobile and pc players.One of
+          the main feature of our server is our 24/7 admin support which you
+          report any bug oru frp our admin will replay as soon as they see it.
+          We are also try to provide fivem feature for mobile samp players
+        </p>
+
+        <div class="btn-box btns" data-aos="fade-right">
+          <a
+            href="https://discord.gg/J8g5xMdvdA"
+            class="btn"
+            id="eventPopupLink"
+            >Know More</a
+          >
+
+          <div class="pop_over"></div>
+          <div class="pop_cont">
+            <h3 class="popup-title">KIDUKKACHI OFFER FOR YOU</h3>
+            <p class="popup-message">
+              DIAMOND VIP - 320 rs (old price 550)<br />
+
+              4 Cr - Iɴɢᴀᴍᴇ Cᴀꜱʜ<br />
+              Uᴘᴘᴇʀ Cʟᴀꜱꜱ Hᴏᴜꜱᴇ <br />
+              2 Pʀᴇᴍɪᴜᴍ Vᴇʜɪᴄʟᴇs (Permanent)<br />
+              1 biz perm<br />
+              1 biz 2 Month<br />
+              VIP Lᴏᴜɴɢᴇ Aᴄᴄᴇss (2 ᴍᴏɴᴛʜ) + Mᴇᴅɪᴜᴍ Bhag<br />
+
+              This offer ends on the 30th june 2023
+            </p>
+            <div class="pop_btn">
+              <button class="popup-button popup-cancel">Cancel</button>
+              <button class="popup-button popup-continue">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <audio id="audioPlayer" autoplay loop>
+      <source src="/song/kgrp_fxtdvl.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="music-controls" data-aos="fade-left">
+      <button id="playPauseButton">Play</button>
+      <span id="currentTime">0:00</span>
+    </div>
+    <!-- Project -->
+
+    
+    <script src="main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+      function setDelayedAlert() {
+        setTimeout(function () {
+          alert(
+            "IF YOU ARE NOT ABLE TO CONNECT USE **kgrp.ddns.net:7796** THIS IP TO CONNECT IF CONNECTED IGNORE"
+          );
+        }, 10000); // 30 seconds (30000 milliseconds)
+      }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <script>
+      var typed = new Typed(".write", {
+        strings: [
+          "THE BEST MOBILE ROLE PLAY SERVER",
+          "BEST MOBILE RP",
+          "24/7 ADMIN SUPPORT",
+          "CUSTOM MAPPINGS",
+          "SPECIAL EVENTS",
+        ],
+        typeSpeed: 70,
+        backSpeed: 55,
+        loop: true,
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var buttons = document.getElementsByClassName("openButton");
+
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener("click", function () {
+            var link = this.getAttribute("data-link");
+            window.open(link, "_blank");
+          });
+        }
+      });
+    </script>
+    <script>
+      // Get references to the custom controls and audio player
+      const playPauseButton = document.getElementById("playPauseButton");
+      const currentTimeDisplay = document.getElementById("currentTime");
+      const audioPlayer = document.getElementById("audioPlayer");
+
+      // Set the loop attribute of the audio player to loop the audio
+      audioPlayer.loop = true;
+
+      // Add event listener to the play/pause button
+      playPauseButton.addEventListener("click", () => {
+        if (audioPlayer.paused) {
+          audioPlayer.play();
+          playPauseButton.textContent = "Pause";
+        } else {
+          audioPlayer.pause();
+          playPauseButton.textContent = "Play";
+        }
+      });
+
+      // Update the current time display
+      audioPlayer.addEventListener("timeupdate", () => {
+        const currentTime = Math.floor(audioPlayer.currentTime);
+        const minutes = Math.floor(currentTime / 60);
+        const seconds = currentTime % 60;
+        currentTimeDisplay.textContent = `${minutes}:${seconds
+          .toString()
+          .padStart(2, "0")}`;
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  <footer>&copy; 2023 designed by <span>Ar®</span></footer>
+</html>
