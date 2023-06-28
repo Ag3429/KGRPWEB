@@ -206,12 +206,29 @@
     </div>
     <!-- Project -->
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
     <script>
       var cancelButton = document.getElementById("cancelButton");
       var link = document.getElementById("myLink");
       var overlay = document.getElementById("overlay");
       var popup = document.getElementById("myPopup");
+
+      var checkbox = document.getElementById("rulesCheckbox");
+      var continueButton = document.getElementById("continueButton");
+
+      checkbox.addEventListener("change", function () {
+        continueButton.disabled = !checkbox.checked;
+      });
+      // checkbox.addEventListener("change", function () {
+      //   continueButton.disabled = !checkbox.checked;
+      // });
+
+      continueButton.addEventListener("click", function () {
+        var linkUrl =
+          "https://discord.com/channels/971697340450754590/1016564708133851218"; // Replace with your desired link URL
+        window.open(linkUrl);
+      });
+
       cancelButton.addEventListener("click", function (e) {
         // e.preventDefault();
         console.log("done");

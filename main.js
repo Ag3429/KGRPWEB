@@ -1,7 +1,5 @@
 
 
-var checkbox = document.getElementById("rulesCheckbox");
-var continueButton = document.getElementById("continueButton");
 
 var eventPopupLink = document.getElementById("eventPopupLink");
 var popupOverlay = document.querySelector(".pop_over");
@@ -23,19 +21,6 @@ addEventListener("scroll", function (e){
   }
 });
 
-
-
-
-
-checkbox.addEventListener("change", function () {
-  continueButton.disabled = !checkbox.checked;
-});
-
-continueButton.addEventListener("click", function () {
-  var linkUrl =
-    "https://discord.com/channels/971697340450754590/1016564708133851218"; // Replace with your desired link URL
-  window.open(linkUrl);
-});
 
 eventPopupLink.addEventListener("click", function (e) {
   e.preventDefault();
